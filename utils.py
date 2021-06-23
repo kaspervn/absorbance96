@@ -6,7 +6,6 @@ from tabulate import tabulate
 
 from absorbance96 import Absorbance96
 
-
 def pretty_print_measurement_data(data, file=sys.stdout):
     restructred_data = np.array(data).reshape((12, 8)).astype(str).transpose()
     restructred_data = np.concatenate((np.array([['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']]).transpose(), restructred_data), axis=1)
@@ -25,12 +24,12 @@ def check_absorbance_error_and_report(absorbance_dev: Absorbance96, do_exit=Fals
         return err_code
 
 
-def do_interactive_calibration(absorbance_dev: Absorbance96, main_wavelength: int):
+def do_interactive_calibration(absorbance_dev: Absorbance96, main_wavelength: int, reference_wavelength: int = -1):
     print("Let's do a calibration!")
     print("Please remove the plate from the absorbance meter, and then press enter")
     input()
     print('Doing calibration...')
-    result = absorbance_dev.calibrate(main_wavelength)
+    result = absorbance_dev.calibrate(main_wavelength, reference_wavelength)
     print(f'Done. result: {result}')
     check_absorbance_error_and_report(absorbance_dev, do_exit=True)
     print('Now place back the plate and then press enter')

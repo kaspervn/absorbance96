@@ -24,7 +24,7 @@ else:
     exit(1)
 
 available_filters = absorbance_meter.get_filters()
-print(f'available wavelengths: {",".join(available_filters)}')
+print(f'available wavelengths: {",".join(map(str, available_filters.values()))}')
 
 filter_600_index = check_and_assert_wavelength_index(available_filters, 600)
 

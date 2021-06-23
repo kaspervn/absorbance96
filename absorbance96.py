@@ -14,7 +14,7 @@ class Absorbance96:
 
     def __init__(self, port: serial.Serial):
         self.port = port
-        self.port.timeout = 10
+        self.port.timeout = 30
 
     def _do_command(self, cmd, postample):
         self.port.write(f'{cmd}\r'.encode())
