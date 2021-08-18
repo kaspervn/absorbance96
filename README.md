@@ -14,7 +14,8 @@ To use the utilities used in `example.py`:
 * `tabulate`
 
 ## Acknowledgments
-This library was part of a project of P.T. Van leeuwen, researcher at the research group Molecular Biology and Food Safety, which is part of the Swammerdam Institute for Life Sciences at the University of Amsterdam.
-I also want to thank Byonoy for providing support and allowing this library to be published.
+This library was part of a project of P.T. Van leeuwen, researcher at the research group [Molecular Biology and Food Safety](https://sils.uva.nl/content/research-groups/molecular-biology-and-microbial-food-safety/molecular-biology--microbial-food-safety.html), which is part of the [Swammerdam Institute for Life Sciences](sils.uva.nl) at the University of Amsterdam. The library has been developed at the [Technology Centre](https://www.uva.nl/en/about-the-uva/organisation/faculties/faculty-of-science/contact-and-location/technology-centre/technology-centre.html) of the UvA. 
+
+I also want to thank [Byonoy](byonoy.com) for providing support and allowing this library to be published.
 
 
